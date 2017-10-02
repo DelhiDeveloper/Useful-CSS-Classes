@@ -1,0 +1,473 @@
+@charset "utf-8";
+/* Useful CSS Classes */
+
+
+
+
+
+
+/* For Text 
+***********************************************************************************************************************/
+
+/* Text Wrap a Single Word But Do Not Horizontal Overflow No Matter What */
+.text_wrap {
+	word-wrap: break-word;
+}
+.text-bold {
+	font-weight:bold;
+}
+
+
+
+
+
+/* For Forms 
+***********************************************************************************************************************/
+
+/* The red star for the required fields of a form */
+.red_star:after {
+  content:" *";
+  color:#E60000;
+}
+
+.sub_label {
+	color:#aaa;
+}
+
+
+
+
+
+/* For Divs Display Classes
+***********************************************************************************************************************/
+.dis_in {
+	display:inline-block;
+}
+
+.clear_both {
+	clear: both;
+}
+
+
+/* Div Positioning Classes 
+***********************************************************************************************************************/
+/* For creating an overlaping extra layer with full height and width and absolute position */
+.ab {
+	position:absolute;
+	left:0;
+	top:0;
+}
+.ab_full_hw {
+	position:absolute;
+	left:0;
+	top:0;
+	height:100%;
+	width:100%;
+	padding:0px;
+	margin:0px;
+}
+
+
+/* For top and down padding of 7px in blocks containing text only 
+***********************************************************************************************************************/
+.td_padding {
+	padding-top:7px;
+	padding-bottom:7px;
+}
+
+
+/* Classes to remove both padding and margin from bootstrap widths 
+***********************************************************************************************************************/
+.no_pm {
+	padding:0px;
+	margin:0px;
+}
+.no_p {
+	padding:0px;
+}
+.no_m {
+	margin:0px;
+}
+
+
+
+/* Classes to create full height or width divs */
+.full_h {
+	height:100%;
+	padding-top:0px;
+	padding-bottom:0px;
+	margin-top:0px;
+	margin-bottom:0px;
+}
+.full_w {
+	width:100%;
+	padding-left:0px;
+	padding-right:0px;
+	margin-left:0px;
+	margin-right:0px;
+}
+.full_hw {
+	height:100%;
+	width:100%;
+	padding:0px;
+	margin:0px;
+}
+
+
+
+/* Classes for vertically and horizontally centering a div inside another div 
+***********************************************************************************************************************/
+	/* This parent can be any width and height */
+	.centered_wrapper {
+		display: table;
+		position: absolute;
+		height: 100%;
+	}
+	
+	/* The element to be centered, can
+	   also be of any width and height */ 
+	.centered {
+		display: table-cell;
+		vertical-align: middle;
+		text-align:center;
+	}
+	/* Horizontally centering a div inside another div*/
+	.h_centered {
+		margin-left:auto;
+		margin-right:auto;
+	}
+/* /End of Classes for vertically and horizontally centering a div inside another div */
+
+
+
+/* Classes to create objects that are visible eigther on desktop mode only or tablet mode only 
+***********************************************************************************************************************/
+
+/* Dissappear From Every Device */
+.dis_none {
+	display:none;
+}
+
+/* For Desktop */
+.none_desktop {
+	display:block;
+}
+@media (min-width: 768px) {
+	.none_desktop {
+		display:none;
+	}
+}
+.block_desktop {
+	display:none;
+}
+@media (min-width: 768px) {
+	.block_desktop {
+		display:block;
+	}
+}
+/* For Phone */
+@media (max-width: 767px) {
+	.none_phone {
+		display:none;
+	}
+}
+.block_phone {
+	display:none;
+}
+@media (max-width: 767px) {
+	.block_phone {
+		display:block;
+	}
+}
+
+
+/* Classes for different mouse pointers 
+***********************************************************************************************************************/
+.pointer {
+	cursor: pointer;
+}
+
+
+
+
+/* Classes for smooth animated transition of objects 
+***********************************************************************************************************************/
+/* For smooth transitions and animations... */
+.transition_half_sec {
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.transition_1_sec {
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+
+/* Circular Divs 
+***********************************************************************************************************************/
+	.circular_div {
+		border-radius: 50%;
+		behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+	}
+/* /End of Circular Divs */
+
+
+/* Translucent Background and images classes 
+***********************************************************************************************************************/
+/* Translucent_background */
+.translucent_bg {
+	background-color: #fff;
+	background-color: rgba(255,255,255,0.5);
+}
+/* Translucent_image */
+.tanslucent_img {
+opacity: 0.5;
+filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+
+
+/* Different Margins, Padding and Border-Radius Classes 
+***********************************************************************************************************************/
+
+/* Margin Top Classes */
+.t_0 {
+	margin-top:0px;
+}
+.t_10 {
+	margin-top:10px;
+}
+.t_20 {
+	margin-top:20px;
+}
+.t_30 {
+	margin-top:30px;
+}
+.t_40 {
+	margin-top:40px;
+}
+.t_50 {
+	margin-top:50px;
+}
+/* Margin Bottom Classes */
+.b_0 {
+	margin-bottom:0px;
+}
+.b_10 {
+	margin-bottom:10px;
+}
+.b_20 {
+	margin-bottom:20px;
+}
+.b_30 {
+	margin-bottom:30px;
+}
+.b_40 {
+	margin-bottom:40px;
+}
+.b_50 {
+	margin-bottom:50px;
+}
+/* Padding Top Classes */
+.pt_0 {
+	padding-top:0px;
+}
+.pt_10 {
+	padding-top:10px;
+}
+.pt_20 {
+	padding-top:20px;
+}
+.pt_30 {
+	padding-top:30px;
+}
+.pt_40 {
+	padding-top:40px;
+}
+.pt_50 {
+	padding-top:50px;
+}
+/* Margin Bottom Classes */
+.pb_0 {
+	padding-bottom:0px;
+}
+.pb_10 {
+	padding-bottom:10px;
+}
+.pb_20 {
+	padding-bottom:20px;
+}
+.pb_30 {
+	padding-bottom:30px;
+}
+.pb_40 {
+	padding-bottom:40px;
+}
+.pb_50 {
+	padding-bottom:50px;
+}
+
+
+
+
+/* Padding for text: 10px */
+.p_10 {
+	padding:5px 10px;
+}
+
+/* Padding for text: 20px */
+.p_20 {
+	padding:10px 20px;
+}
+
+/* Padding for text: 20px */
+.p_30 {
+	padding:15px 30px;
+}
+
+/* Rounded borders: 5px */
+.br_5 {
+	border-radius:10px;
+}
+/* Rounded borders: 10px */
+.br_10 {
+	border-radius:10px;
+}
+/* Rounded borders: 15px */
+.br_15 {
+	border-radius:15px;
+}
+
+
+
+
+/* Equal Height Columns 
+***********************************************************************************************************************/
+
+.equal_column_wrapper {
+	width:100%;
+}
+.equal_column_row {
+	width:100%;
+}
+@media (max-width: 991px) {
+	.equal_column_wrapper {
+		display:block;
+	}
+	.equal_column_row {
+		display:block;
+	}
+	.equal_column {
+		display:block;
+	}
+}
+@media (min-width: 992px) {
+	.equal_column_wrapper {
+		display:table;
+	}
+	.equal_column_row {
+		display:table-row;
+	}
+	.equal_column {
+		display:table-cell;
+		float:none;
+		vertical-align:middle;
+	}
+}
+/* /Equal Height Columns */
+
+
+
+
+
+/* Class to make something BLINK! 
+***********************************************************************************************************************/
+.blink {
+  animation: blink 1s steps(5, start) infinite;
+  -webkit-animation: blink 1s steps(5, start) infinite;
+}
+@keyframes blink {
+  to {
+	visibility: hidden;
+  }
+}
+@-webkit-keyframes blink {
+  to {
+	visibility: hidden;
+  }
+}
+
+
+
+
+
+
+/* CSS for Horizontal Flip on Hover 
+***********************************************************************************************************************/
+	/* entire container, keeps perspective */
+	.flip-container {
+		perspective: 1000;
+	}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+	
+	.flip-container, .front, .back {
+		width: 320px;
+		height: 480px;
+	}
+	
+	/* flip speed goes here */
+	.flipper {
+		transition: 0.6s;
+		transform-style: preserve-3d;
+	
+		position: relative;
+	}
+	
+	/* hide back of pane during swap */
+	.front, .back {
+		backface-visibility: hidden;
+	
+		position: absolute;
+		top: 0;
+		left: 0;
+		
+		text-align:center; /* OWN CODE */
+	}
+	
+	/* front pane, placed above back */
+	.front {
+		z-index: 2;
+		/* for firefox 31 */
+		transform: rotateY(0deg);
+	}
+	
+	/* back, initially hidden pane */
+	.back {
+		transform: rotateY(180deg);
+	}
+/* /End of CSS for Horizontal Flip on Hover */
+
+
+
+/* CSS for Special Anchors 
+***********************************************************************************************************************/
+
+/* To remove underline from Anchors */
+.no_u {
+	text-decoration:none !important;
+}
+
+.a_disabled {
+   pointer-events: none;
+   cursor: default;
+}
+
+
+
